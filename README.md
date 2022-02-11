@@ -1,15 +1,15 @@
 # 1. What is this ?
-These are scripts to create laravel project from scratch with docker and vscode inspired from [official sail install]( https://laravel.build/example-app) from an simple cmd.exe
+Mainly a cmd.exe wrapper to create laravel project from scratch with docker and vscode inspired from official sail install :
+```bash
+curl -s "https://laravel.build/example-app?with=mysql,selenium,mailhog&devcontainer" | bash
+```
 
 # 2. Why these scripts ?
-The original scripts doesn’t allow to specify the project name and cannot be run from the standard cmd.exe which can be a reason not to use them...
-Furthermore, it adds redis by default and doesn’t add devcontainer.json.
+The original scripts cannot be run from the standard cmd.exe and cannot be customized to have --git upon creation
 
 ## 2.1. Differences
-- installs only mysql, selenium and mailhog
-- add devcontainer
-- creates the foldername you choose
 - can be started from standard cmd.exe
+- add default gitignore
 
 # 3. Prerequisites
 ## 3.1. WSL2

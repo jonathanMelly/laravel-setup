@@ -17,7 +17,7 @@ else
         curl -s "https://laravel.build/$project?with=mysql,selenium,mailhog&devcontainer" | bash
         if [ $? -eq 0 ]; then
             echo "Adding default .gitignore"
-            cd $project && curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Laravel.gitignore >/dev/null
+            cd $project && curl -s -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Laravel.gitignore
             echo "done, ready to code ;-)"
         else
             echo "Error creating docker env, aborting"

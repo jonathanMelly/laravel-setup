@@ -1,14 +1,14 @@
 # 1. What is this ?
-Mainly a cmd.exe wrapper to create laravel project from scratch with docker and vscode inspired from official sail install :
+Mainly a gui style batch wrapper to create laravel project from scratch with docker and vscode inspired from official sail install :
 ```bash
 curl -s "https://laravel.build/example-app?with=mysql,selenium,mailhog&devcontainer" | bash
 ```
 
 # 2. Why these scripts ?
-The original scripts cannot be run from the standard cmd.exe and cannot be customized to have --git upon creation
+The original scripts need some commandline knowledge and cannot (yet?) be customized to have --git upon creation
 
 ## 2.1. Differences
-- can be started from standard cmd.exe
+- can be started with a simple double-click
 - add default gitignore
 
 # 3. Prerequisites
@@ -19,16 +19,12 @@ As explained on https://docs.docker.com/desktop/windows/wsl/ :
 
 ## 3.2. VSCODE
 Download and install [vscode](https://code.visualstudio.com/download)
+
+## 3.3. Powershell
+The directory selection uses powershell to show a GUI dialog
  
 # 4. Usage
  - [Download the scripts](https://github.com/jonathanMelly/laravel-setup/archive/refs/heads/main.zip)
  - Unzip *somewhere*
- - Start cmd.exe and go to *somewhere*
- - Type tthe following command
-
-```batch
-laravel-setup an-awesome-project-name
-```
-
-## 4.1. Path
-You may add *somewhere* to your path to use the command wherever you want...
+ - **Double-click** on 'laravel-setup.bat'
+ - Enjoy coding ;-)
